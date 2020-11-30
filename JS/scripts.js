@@ -1,4 +1,18 @@
-alert('hello world')
+let pokemonList = [
+    {
+    name: 'Bulbasaur', 
+    height: 0.7,
+     type: ["grass"],
+    },
+{
+    name: 'Charmander',
+    height: 0.6,
+    type: ["fire"],
 
-favoriteFood = 'Nashville Hot Chicken'
-document.write(favoriteFood)
+},
+{
+    name: 'Squirtle',
+    height: 0.5,
+    type: ["water"]
+}
+]
