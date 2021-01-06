@@ -1,24 +1,31 @@
-let pokemonList = [
-    {
-    name: 'Bulbasaur', 
-    height: 0.7,
-    type: ["grass"],
+let pokemonRepository = (function () {
+let pokemonList = [{
+        name: 'Bulbasaur',
+        height: 0.7,
+        type: ["grass"],
     },
-{
-    name: 'Charmander',
-    height: 0.6,
-    type: ["fire"],
+    {
+        name: 'Charmander',
+        height: 0.6,
+        type: ["fire"],
 
-},
-{
-    name: 'Squirtle',
-    height: 0.5,
-    type: ["water"],
-}
-]
-var i;
-//Used a ternary operator here to find and label the biggest pokemon and the smallest
-for (i = 0; i < pokemonList.length; i++) {
-    let specialText = pokemonList[i].height > 0.6 ? "This is the biggest!" : "This is smaller..."; 
-    document.write(pokemonList[i].name + " " + "(Height:" + pokemonList[i].height + ")" + specialText + "<br>");
-}
+    },
+    {
+        name: 'Squirtle',
+        height: 0.5,
+        type: ["water"],
+    }
+];
+return {
+    add:function(pokemon) {
+        pokemonList.push(pokemon);
+    },
+    getAll: function() {
+        return pokemonList;
+    }
+};
+})();
+console.log(pokemonRepository.getAll()); //
+[]
+pokemonRepository.add({ name: 'Pikachu', height: 0.5, type: ["electric"]  });
+console.log(pokemonRepository.getAll()); // [ { name: 'Pikachu' } ]
