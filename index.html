@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="CSS/stylesheet.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple JS App</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokedex</title>
   </head>
   <body>
-    <ul class='pokemon-list'></ul>
-    <div id="text">
-      <script src="js/scripts.js"></script>
-    </div>
+    <header>
+      <img src="img/pokedexLogo.png" alt="logo" class="picture" />
+    </header>
+
+    <ul class="pokemon-list"></ul>
+
+    <button id="show-modal"></button>
+
+    <h1 id="modal-title"></h1>
+
+    <div id="modal-container"></div>
+
+    <div id="img-container"></div>
+    <script src="js/promise-polyfill.js"></script>
+    <script src="js/fetch.umd.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
