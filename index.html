@@ -1,27 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <link rel="shortcut icon" href="src/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dist/stylesheet.minify.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pokedex</title>
   </head>
+
   <body>
+    <!--Nav Bar-->
     <header>
-      <img src="img/pokedexLogo.png" alt="logo" class="picture" />
+      <nav class="navbar fixed-top ml-auto">
+        <div>
+          <a
+            class="navbar-brand"
+            href="https://github.com/Name-Javi/simple-js-app"
+            target="_blank"
+          >
+            <img src="src/img/pokedexLogo.png" alt="Pokedex logo" />
+          </a>
+        </div>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            id="search-pokemon"
+            type="search"
+            placeholder="Filter by name.."
+            aria-label="Search"
+          />
+        </form>
+      </nav>
+      <!--Pokedex Logo-->
+      <div class="pokemon-logo">
+        <a href="https://github.com/Name-Javi/simple-js-app" target="_blank">
+          <img src="src/img/pokedexLogo.png" alt="Pokemon-Logo" />
+        </a>
+      </div>
     </header>
 
-    <ul class="pokemon-list"></ul>
+    <!--list-->
+    <div class="pokemon-list"></div>
+    <!--Modal-->
+    <div
+      class="modal fade"
+      id="modal-item"
+      tabindex="-1"
+      role="dialog"
+      aira-describedby="pokemonName"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="item-name"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Pokemon elements -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="modal-close btn btn-secondary"
+              data-dismiss="modal"
+              name="button"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <button id="show-modal"></button>
+    <!-- JQuery, Popper.js, Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.js -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
 
-    <h1 id="modal-title"></h1>
-
-    <div id="modal-container"></div>
-
-    <div id="img-container"></div>
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch.umd.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="dist/scripts.minify.js"></script>
   </body>
 </html>
