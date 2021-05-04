@@ -1,9 +1,21 @@
-JavaScript App (Pokédex)
+# Pokédex App
 
-This Application was built in HTML, CSS, JavaScript, Jquery and Bootstrap.
+## Overview
 
-It uses an external API to display details about Pokemon.
+This is the second project that I created as part of my online web development course. It focused mainly on using JavaScript to load data from an external API, as well as implementing the UI framework Bootstrap on some elements to create a clean-looking, user-friendly interface.
 
-https://name-javi.github.io/simple-js-app/
+### View it live [HERE](https://name-javi.github.io/simple-js-app/)
 
-https://pokeapi.co/
+## Technologies:
+
+- JavaScript
+- HTML
+- CSS
+- Bootstrap
+
+## Key Features:
+
+- Loads Pokémon data from an external [API](https://pokeapi.co/) 
+- Ability to view a list of Pokémon
+- Ability to view details of specific Pokémon on pop-up modal at the click of a button
+- Search function that actively filters as user types
