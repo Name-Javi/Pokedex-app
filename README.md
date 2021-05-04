@@ -4,7 +4,7 @@
 
 This is the second project that I created as part of my online web development course. It focused mainly on using JavaScript to load data from an external API, as well as implementing the UI framework Bootstrap on some elements to create a clean-looking, user-friendly interface.
 
-### View it live [HERE](https://name-javi.github.io/simple-js-app/)
+### View it live [HERE](https://name-javi.github.io/Pokedex-app/)
 
 ## Technologies:
 
